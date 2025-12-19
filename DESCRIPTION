@@ -1,7 +1,7 @@
 Package: yisasnxlooukup
 Title: IP Address Information Lookup and Visualization
 Version: 0.1.0
-Author: Your Name
+Author: Aleksandr Vakhrameev, Mikhail Kobyak, Yaroslav Prishedko
 Maintainer: Your Name <your.email@example.com>
 Description: R package for fetching IP address information from ip-api.com,
     normalizing the data, calculating metrics, and visualizing results
