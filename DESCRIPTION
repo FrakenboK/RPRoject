@@ -1,0 +1,23 @@
+Package: yisasnxlooukup
+Title: IP Address Information Lookup and Visualization
+Version: 0.1.0
+Author: Your Name
+Maintainer: Your Name <your.email@example.com>
+Description: R package for fetching IP address information from ip-api.com,
+    normalizing the data, calculating metrics, and visualizing results
+    through a Shiny application.
+License: MIT
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Imports:
+    httr2,
+    jsonlite,
+    dplyr,
+    stringr,
+    ipaddress,
+    lubridate,
+    tidyr
+Suggests:
+    roxygen2,
+    testthat

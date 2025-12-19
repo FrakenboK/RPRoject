@@ -1,0 +1,7 @@
+^\.Rhistory$
+^\.RData$
+^\.Ruserdata$
+^docker/
+^\.git/
+^\.gitignore$
+
