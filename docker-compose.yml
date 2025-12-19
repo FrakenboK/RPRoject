@@ -1,0 +1,28 @@
+services:
+  etl:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+      platforms:
+        - linux/amd64
+    volumes:
+      - ./data:/srv/ourpack/data
+    environment:
+      - OURPACK_DATA_DIR=/srv/ourpack/data
+      - IP_LIST=${IP_LIST:-}
+    command: Rscript /app/yisasnxlooukup/docker/run_etl.R
+
+  app:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+      platforms:
+        - linux/amd64
+    ports:
+      - "3838:3838"
+    volumes:
+      - ./data:/srv/ourpack/data
+    environment:
+      - OURPACK_DATA_DIR=/srv/ourpack/data
+    command: R -e "yisasnxlooukup::run_app(host='0.0.0.0', port=3838)"
+
