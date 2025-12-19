@@ -14,10 +14,13 @@ Imports:
     httr2,
     jsonlite,
     dplyr,
+    tidyr,
     stringr,
     ipaddress,
     lubridate,
-    tidyr
+    ggplot2,
+    DT,
+    RColorBrewer
 Suggests:
     roxygen2,
     testthat
