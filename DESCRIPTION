@@ -11,15 +11,16 @@ Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.3.3
 Imports:
+    shiny,
     httr2,
     jsonlite,
     dplyr,
     tidyr,
     stringr,
     ipaddress,
-    lubridate,
     ggplot2,
     DT,
+    lubridate,
     RColorBrewer
 Suggests:
     roxygen2,
