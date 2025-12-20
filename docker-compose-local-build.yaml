@@ -1,6 +1,10 @@
 services:
   web:
-    image: frakenbok/rproject:latest
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+      platforms:
+        - linux/amd64
     ports:
       - "3838:3838"
     volumes:
